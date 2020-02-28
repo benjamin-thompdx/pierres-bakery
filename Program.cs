@@ -20,6 +20,7 @@ namespace PierresBakery
       Console.WriteLine ("-----------------");
       OrderBread();
       OrderPastery();
+      OrderTotal();
     }
       
       public static void OrderBread()
@@ -67,6 +68,11 @@ namespace PierresBakery
           Console.WriteLine("Order refreshed, please enter 'y' for yes or 'n' for no");
           OrderPastery();
         }
+      }
+
+      public static void OrderTotal()
+      {
+        
       }
 
   }

@@ -9,7 +9,7 @@
 A user can create a Pierre's Bakery order for bread and/or pastries and the application will provide a total cost for the user's custom order.
 
 ## Preview
-![Landing Page Preview](img/image file name here)
+![Landing Page Preview](img/pierres-bakery-preview.png)
 
 ## Project Specifications
 
