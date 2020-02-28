@@ -72,7 +72,8 @@ namespace PierresBakery
 
       public static void OrderTotal()
       {
-        
+        Console.WriteLine ("-----------------");
+        Console.WriteLine("Order Summary:");
       }
 
   }

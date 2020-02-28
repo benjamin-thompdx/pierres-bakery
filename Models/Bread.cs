@@ -4,15 +4,22 @@ namespace Models
 {
   public class Bread
   {
-    public string BreadName { get; set; } = "bread";
-    public int BreadQuantity { get; set; } = 1;
-    public int BreadPrice { get; set; } = 5;
+    public string BreadName { get; set; }
+    public int BreadQuantity { get; set; }
+    public int BreadPrice { get; set; }
 
     public Bread(string breadName, int breadQuantity, int breadPrice)
     {
-      BreadName = breadName;
-      BreadQuantity = breadQuantity;
-      BreadPrice = breadPrice;
+      BreadName = "bread";
+      BreadQuantity = 0;
+      BreadPrice = 0;
     }
+
+    private void AddBreadToOrder()
+    {
+      BreadQuantity += 1;
+      BreadPrice += 5;
+    }
+
   }
 }

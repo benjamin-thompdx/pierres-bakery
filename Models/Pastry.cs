@@ -4,15 +4,21 @@ namespace Models
 {
   public class Pastry
   {
-    public string PastryName { get; set; } = "Pastry";
-    public int PastryQuantity { get; set; } = 1;
-    public int PastryPrice { get; set; } = 2;
+    public string PastryName { get; set; }
+    public int PastryQuantity { get; set; }
+    public int PastryPrice { get; set; }
 
     public Pastry(string pastryName, int pastryQuantity, int pastryPrice)
     {
-      PastryName = pastryName;
-      PastryQuantity = pastryQuantity;
-      PastryPrice = pastryPrice;
+      PastryName = "pastry";
+      PastryQuantity = 0;
+      PastryPrice = 0;
+    }
+
+    private void AddPastryToOrder()
+    {
+      PastryQuantity += 1;
+      PastryPrice += 2;
     }
   }
 }
