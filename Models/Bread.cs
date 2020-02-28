@@ -4,8 +4,8 @@ namespace Models
 {
   public class Bread
   {
-    private string _breadName;
-    private int _breadQuantity;
-    private int _breadPrice;
+    public string BreadName { get; set; }
+    public int BreadQuantity { get; set; }
+    public int BreadPrice { get; set; }
   }
 }
