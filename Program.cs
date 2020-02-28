@@ -32,7 +32,7 @@ namespace PierresBakery
           if (userInput == "y")
           {
             Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
-            //Console.ReadLine(0);
+            //Console.Readline();
           }
           else if ( userInput != "n")
           {
@@ -56,7 +56,7 @@ namespace PierresBakery
           if (userInput == "y")
           {
             Console.WriteLine("Enter the number of pastries would you like to buy:");
-            //Console.ReadLine(0);
+            //Console.Readline();
           }
           else if (userInput == "n")
           {
