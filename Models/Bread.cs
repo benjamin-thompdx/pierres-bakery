@@ -15,6 +15,11 @@ namespace Models
       BreadPrice = 0;
     }
 
+    public void UpdateBreadOrder()
+    {
+      AddBreadToOrder();
+    }
+
     private void AddBreadToOrder()
     {
       BreadQuantity += 1;

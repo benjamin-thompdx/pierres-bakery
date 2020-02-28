@@ -15,6 +15,11 @@ namespace Models
       PastryPrice = 0;
     }
 
+    public void UpdatePastryOrder()
+    {
+      AddPastryToOrder();
+    }
+
     private void AddPastryToOrder()
     {
       PastryQuantity += 1;
