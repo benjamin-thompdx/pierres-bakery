@@ -9,15 +9,13 @@ namespace Models
 
     public Pastry()
     {
-      PastryName = "pastry";
       PastryQuantity = 0;
-      PastryPrice = 0;
+      PastryPrice = 2;
     }
 
     private void AddPastry()
     {
       PastryQuantity += 1;
-      PastryPrice += 2;
     }
   }
 }

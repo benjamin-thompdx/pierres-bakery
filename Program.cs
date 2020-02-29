@@ -32,7 +32,8 @@ namespace PierresBakery
           if (userInput == "y")
           {
             Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
-            //Console.Readline();
+            string stringBreadInput = Console.ReadLine();
+            int intBreadInput = int.Parse(stringBreadInput);
           }
           else if ( userInput != "n")
           {

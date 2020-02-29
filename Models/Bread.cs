@@ -6,18 +6,30 @@ namespace Models
   {
     public int BreadQuantity { get; set; }
     public int BreadPrice { get; set; }
+    public int BreadTotalPrice { get; set; }
+
 
     public Bread()
     {
-      BreadName = "bread";
       BreadQuantity = 0;
-      BreadPrice = 0;
+      BreadPrice = 5;
+      BreadTotalPrice = 0;
     }
 
-    private void AddBread()
+    public void BreadOrder(int intBreadInput)
     {
-      BreadQuantity += 1;
-      BreadPrice += 5;
+      AddBread(intBreadInput);
+      BreadCost();
+    }
+
+    private void AddBread(int intBreadInput)
+    {
+      BreadQuantity += intBreadInput;
+    }
+
+    private void BreadCost()
+    {
+      BreadTotalPrice = BreadPrice * BreadQuantity;
     }
 
   }
