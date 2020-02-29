@@ -1,6 +1,8 @@
 using System;
+using PierresBakery;
+using PierresBakery.Models;
 
-namespace Models
+namespace PierresBakery.Models
 {
   public class Bread
   {
@@ -9,22 +11,22 @@ namespace Models
     public int BreadTotalPrice { get; set; }
 
 
-    public Bread()
+    public Bread(int breadQuantity, int breadPrice, int breadTotalPrice)
     {
       BreadQuantity = 0;
       BreadPrice = 5;
       BreadTotalPrice = 0;
     }
 
-    public void BreadOrder(int intBreadInput)
+    public void BreadOrder(int intInputBread)
     {
-      AddBread(intBreadInput);
+      AddBread(intInputBread);
       BreadCost();
     }
 
-    private void AddBread(int intBreadInput)
+    private void AddBread(int intInputBread)
     {
-      BreadQuantity += intBreadInput;
+      BreadQuantity += intInputBread;
     }
 
     private void BreadCost()

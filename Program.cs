@@ -1,5 +1,5 @@
 using System;
-using Models;
+using PierresBakery.Models;
 
 namespace PierresBakery
 {
@@ -7,6 +7,9 @@ namespace PierresBakery
   {
     public static void Main()
     {
+      // Bread newCustomerB = new Bread();
+      // Pastry newCustomerP = new Pastry();
+
       Console.WriteLine(@"     ____  _                    _          ____        __                  
    / __ \(_)__  _____________ ( )_____   / __ )____ _/ /_____  _______  __
   / /_/ / / _ \/ ___/ ___/ _ \|// ___/  / __  / __ `/ //_/ _ \/ ___/ / / /
@@ -24,16 +27,16 @@ namespace PierresBakery
       public static void OrderBread()
       {
         Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
-         string userInputBread = Console.ReadLine().ToLower();
-        if (userInputBread == "y" || userInputBread == "n")
+         string userInput = Console.ReadLine().ToLower();
+        if (userInput == "y" || userInput == "n")
         {
-          if (userInputBread == "y")
+          if (userInput == "y")
           {
             Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
-            string stringBreadInput = Console.ReadLine();
-            int intBreadInput = int.Parse(stringBreadInput);
+            // Console.ReadLine();
+
           }
-          else if ( userInputBread != "n")
+          else if ( userInput != "n")
           {
             Console.WriteLine("Order refreshed, please enter 'y' for yes or 'n' for no");
             OrderBread();
@@ -48,15 +51,15 @@ namespace PierresBakery
       {
         Console.WriteLine ("-----------------");
         Console.WriteLine("Would you like to order pastries? Type 'y' for yes and 'n' for no");
-        string userInputPastry = Console.ReadLine().ToLower();
-        if (userInputPastry == "y" || userInputPastry == "n")
+        string userInput = Console.ReadLine().ToLower();
+        if (userInput == "y" || userInput == "n")
         {
-          if (userInputPastry == "y")
+          if (userInput == "y")
           {
             Console.WriteLine("Enter the number of pastries would you like to buy:");
-            //Console.Readline();
+            // Console.Readline();
           }
-          else if (userInputPastry == "n")
+          else if (userInput == "n")
           {
             Console.WriteLine("Thank you for visiting - We look forward to doing business with you in the future!");
           }

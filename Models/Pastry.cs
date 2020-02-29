@@ -1,6 +1,8 @@
 using System;
+using PierresBakery;
+using PierresBakery.Models;
 
-namespace Models
+namespace PierresBakery.Models
 {
   public class Pastry
   {
