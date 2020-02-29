@@ -9,11 +9,11 @@ namespace PierresBakery.Models
     public int PastryQuantity { get; set; }
     public int PastryPrice { get; set; }
 
-    public Pastry()
+    public Pastry(int pastryQuantity, int pastryPrice)
     {
       PastryQuantity = 0;
       PastryPrice = 2;
     }
-    
+
   }
 }
