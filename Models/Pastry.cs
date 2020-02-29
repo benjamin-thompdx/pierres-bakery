@@ -19,15 +19,15 @@ namespace PierresBakery.Models
     {
       Console.WriteLine ("-----------------");
       Console.WriteLine("Would you like to order pastries? Type 'y' for yes and 'n' for no");
-      string userInput = Console.ReadLine().ToLower();
-      if (userInput == "y" || userInput == "n")
+      string dessert = Console.ReadLine().ToLower();
+      if (dessert == "y" || dessert == "n")
       {
-        if (userInput == "y")
+        if (dessert == "y")
         {
           Console.WriteLine("Enter the number of pastries would you like to buy:");
           // Console.Readline();
         }
-        else if (userInput == "n")
+        else if (dessert == "n")
         {
           Console.WriteLine("Thank you for visiting - We look forward to doing business with you in the future!");
         }
