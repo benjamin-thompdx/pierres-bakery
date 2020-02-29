@@ -7,9 +7,6 @@ namespace PierresBakery
   {
     public static void Main()
     {
-      // Bread newCustomerB = new Bread();
-      // Pastry newCustomerP = new Pastry();
-
       Console.WriteLine(@"     ____  _                    _          ____        __                  
    / __ \(_)__  _____________ ( )_____   / __ )____ _/ /_____  _______  __
   / /_/ / / _ \/ ___/ ___/ _ \|// ___/  / __  / __ `/ //_/ _ \/ ___/ / / /
@@ -27,7 +24,7 @@ namespace PierresBakery
       public static void OrderBread()
       {
         Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
-         string userInput = Console.ReadLine().ToLower();
+        string userInput = Console.ReadLine().ToLower();
         if (userInput == "y" || userInput == "n")
         {
           if (userInput == "y")
@@ -47,6 +44,7 @@ namespace PierresBakery
           OrderPastery();
         }
       }
+
       public static void OrderPastery()
       {
         Console.WriteLine ("-----------------");
@@ -70,6 +68,7 @@ namespace PierresBakery
           OrderPastery();
         }
       }
+
       public static void OrderTotal()
       {
         Console.WriteLine ("-----------------");

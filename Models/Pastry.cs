@@ -14,10 +14,6 @@ namespace PierresBakery.Models
       PastryQuantity = 0;
       PastryPrice = 2;
     }
-
-    private void AddPastry()
-    {
-      PastryQuantity += 1;
-    }
+    
   }
 }
