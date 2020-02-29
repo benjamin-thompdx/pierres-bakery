@@ -6,15 +6,15 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    public string Name { get; set; }
     public int PastryQuantity { get; set; }
     public int PastryPrice { get; set; }
+    public int Total { get; set; }
 
-    public Pastry(string name)
+    public Pastry()
     {
-      Name = name;
-      PastryQuantity = 1;
+      PastryQuantity = 0;
       PastryPrice = 2;
+      Total = 0;
     }
 
     public void DeterminePastryTotal (string userInput)
@@ -35,6 +35,11 @@ namespace PierresBakery.Models
     {
       PastryPrice *= 1;
     }
+
+    // public PastryTotal()
+    // {
+
+    // }
 
   }
 }
