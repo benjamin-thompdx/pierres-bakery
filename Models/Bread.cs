@@ -8,6 +8,7 @@ namespace PierresBakery.Models
   {
     public int BreadQuantity { get; set; }
     public int BreadPrice { get; set; }
+    public int Total { get; set; }
 
     public Bread(int breadQuantity, int breadPrice)
     {
@@ -25,7 +26,8 @@ namespace PierresBakery.Models
         {
           Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
           // string stringInputBread = Console.ReadLine();
-          // int intInputBread = int.Parse(stringInputBread);
+          // int breadQuantity = int.Parse(stringInputBread);
+          // Console.WriteLine(breadQuantity);
 
         }
         else if ( userInput != "n")
