@@ -6,37 +6,35 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
+    public string Name { get; set; }
     public int PastryQuantity { get; set; }
     public int PastryPrice { get; set; }
 
-    public Pastry(int pastryQuantity, int pastryPrice)
+    public Pastry(string name)
     {
-      PastryQuantity = 0;
+      Name = name;
+      PastryQuantity = 1;
       PastryPrice = 2;
     }
 
-    public static void OrderPastery()
+    public void DeterminePastryTotal (string userInput)
     {
-      Console.WriteLine ("-----------------");
-      Console.WriteLine("Would you like to order pastries? Type 'y' for yes and 'n' for no");
-      string dessert = Console.ReadLine().ToLower();
-      if (dessert == "y" || dessert == "n")
+      if (userInput == "y")
       {
-        if (dessert == "y")
-        {
-          Console.WriteLine("Enter the number of pastries would you like to buy:");
-          // Console.Readline();
-        }
-        else if (dessert == "n")
-        {
-          Console.WriteLine("Thank you for visiting - We look forward to doing business with you in the future!");
-        }
-      }
-      else 
-      {
-        Console.WriteLine("Order refreshed, please enter 'y' for yes or 'n' for no");
-        OrderPastery();
+        AddPastryQuantity();
+        AddPastryPrice();
       }
     }
+
+    private void AddPastryQuantity()
+    {
+      PastryQuantity *= 1;
+    }
+
+    private void AddPastryPrice()
+    {
+      PastryPrice *= 1;
+    }
+
   }
 }

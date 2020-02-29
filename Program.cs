@@ -5,11 +5,13 @@ namespace PierresBakery
 {
   public class Program
   {
+    static string userInputB;
+    static string userInputP;
+    static Bread breadInput = new Bread(userInputB);
+    static Pastry pastryInput = new Pastry(userInputP);
+
     public static void Main()
     {
-      Bread loaf = new Bread(0,5);
-      Pastry dessert = new Pastry(0,2);
-
       Console.WriteLine(@"     ____  _                    _          ____        __                  
    / __ \(_)__  _____________ ( )_____   / __ )____ _/ /_____  _______  __
   / /_/ / / _ \/ ___/ ___/ _ \|// ___/  / __  / __ `/ //_/ _ \/ ___/ / / /
@@ -20,11 +22,21 @@ namespace PierresBakery
       Console.WriteLine("Bakery Menu: Bread $5 and Pastry $2");
       Console.WriteLine("Current Specials --> Bread: Buy 2, Get 1 Free | Pastries: Buy 3 for $5");
       Console.WriteLine ("-----------------");
-      Bread.OrderBread();
-      Pastry.OrderPastery();
+      
+      Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
+      userInputB = Console.ReadLine().ToLower();
+
+      Console.WriteLine("Would you like to order pastry(s)? Type 'y' for yes and 'n' for no");
+      userInputP = Console.ReadLine().ToLower();
       
       Console.WriteLine ("-----------------");
       Console.WriteLine("Order Summary:");
+      
+      breadInput.DetermineBreadTotal(userInputB);
+      Console.WriteLine(breadInput.BreadQuantity + " loaf(s) of bread for $" + breadInput.BreadPrice);
+      
+      pastryInput.DeterminePastryTotal(userInputB);
+      Console.WriteLine(pastryInput.PastryQuantity + " pastry(s) for $" + pastryInput.PastryPrice);
     } 
       // public static void OrderBread()
       // {

@@ -6,33 +6,35 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
+    public string Name { get; set; }
     public int BreadQuantity { get; set; }
     public int BreadPrice { get; set; }
 
-    public Bread(int breadQuantity, int breadPrice)
+    public Bread(string name)
     {
-      BreadQuantity = 0;
+      Name = name;
+      BreadQuantity = 1;
       BreadPrice = 5;
     }
 
-    public static void OrderBread()
+    public void DetermineBreadTotal (string userInputB)
     {
-      Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
-      string loaf = Console.ReadLine().ToLower();
-      if (loaf == "y" || loaf == "n")
+      if (userInputB == "y")
       {
-        if (loaf == "y")
-        {
-          Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
-          // Console.ReadLine();
-
-        }
-        else if ( loaf != "n")
-        {
-          Console.WriteLine("Order refreshed, please enter 'y' for yes or 'n' for no");
-          OrderBread();
-        }
+        AddBreadQuantity();
+        AddBreadPrice();
       }
     }
+
+    private void AddBreadQuantity()
+    {
+      BreadQuantity *= 1;
+    }
+
+    private void AddBreadPrice()
+    {
+      BreadPrice *= 1;
+    }
+
   }
 }
