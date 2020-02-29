@@ -35,7 +35,7 @@ namespace PierresBakery
       breadInput.DetermineBreadTotal(userInputB);
       Console.WriteLine(breadInput.BreadQuantity + " loaf(s) of bread for $" + breadInput.BreadPrice);
       
-      pastryInput.DeterminePastryTotal(userInputB);
+      pastryInput.DeterminePastryTotal(userInputP);
       Console.WriteLine(pastryInput.PastryQuantity + " pastry(s) for $" + pastryInput.PastryPrice);
     } 
       // public static void OrderBread()
