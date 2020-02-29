@@ -5,7 +5,6 @@ namespace PierresBakery
 {
   public class Program
   {
-    static string userInput;
     public static void Main()
     {
       Console.WriteLine(@"     ____  _                    _          ____        __                  
@@ -21,21 +20,20 @@ namespace PierresBakery
       OrderBread();
       OrderPastery();
       OrderTotal();
-    }
-      
+    } 
       public static void OrderBread()
       {
         Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
-        userInput = Console.ReadLine().ToLower();
-        if (userInput == "y" || userInput == "n")
+         string userInputBread = Console.ReadLine().ToLower();
+        if (userInputBread == "y" || userInputBread == "n")
         {
-          if (userInput == "y")
+          if (userInputBread == "y")
           {
             Console.WriteLine("Enter the number of loaves of bread would you like to buy:");
             string stringBreadInput = Console.ReadLine();
             int intBreadInput = int.Parse(stringBreadInput);
           }
-          else if ( userInput != "n")
+          else if ( userInputBread != "n")
           {
             Console.WriteLine("Order refreshed, please enter 'y' for yes or 'n' for no");
             OrderBread();
@@ -46,20 +44,19 @@ namespace PierresBakery
           OrderPastery();
         }
       }
-      
       public static void OrderPastery()
       {
         Console.WriteLine ("-----------------");
         Console.WriteLine("Would you like to order pastries? Type 'y' for yes and 'n' for no");
-        userInput = Console.ReadLine().ToLower();
-        if (userInput == "y" || userInput == "n")
+        string userInputPastry = Console.ReadLine().ToLower();
+        if (userInputPastry == "y" || userInputPastry == "n")
         {
-          if (userInput == "y")
+          if (userInputPastry == "y")
           {
             Console.WriteLine("Enter the number of pastries would you like to buy:");
             //Console.Readline();
           }
-          else if (userInput == "n")
+          else if (userInputPastry == "n")
           {
             Console.WriteLine("Thank you for visiting - We look forward to doing business with you in the future!");
           }
@@ -70,12 +67,10 @@ namespace PierresBakery
           OrderPastery();
         }
       }
-
       public static void OrderTotal()
       {
         Console.WriteLine ("-----------------");
         Console.WriteLine("Order Summary:");
       }
-
   }
 }
