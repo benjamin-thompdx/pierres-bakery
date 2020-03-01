@@ -46,7 +46,7 @@ namespace PierresBakery
         Console.WriteLine("Order Summary:");
         pastryInput.PastryTotal(userQuantityP, pastryPrice);
       }
-      Console.WriteLine("Have a great day, we look forward to doing business with you in the future!");
+      Console.WriteLine("Thank you for visiting - We look forward to doing business with you in the future!");
     }
   }
 }
