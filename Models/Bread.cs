@@ -1,6 +1,4 @@
 using System;
-using PierresBakery;
-using PierresBakery.Models;
 
 namespace PierresBakery.Models
 {
@@ -14,7 +12,7 @@ namespace PierresBakery.Models
       BreadQuantity = 0;
       BreadPrice = 0;
     }
-
+    
     public void BreadTotal(int breadQuantity, int breadPrice)
     {
       if (breadQuantity == 1)

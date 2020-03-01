@@ -1,6 +1,4 @@
 using System;
-using PierresBakery;
-using PierresBakery.Models;
 
 namespace PierresBakery.Models
 {

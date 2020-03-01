@@ -22,7 +22,6 @@ namespace PierresBakery
       Console.WriteLine("Bakery Menu: Bread $5 and Pastry $2");
       Console.WriteLine("Current Specials --> Bread: Buy 2, Get 1 Free | Pastries: Buy 3 for $5");
       Console.WriteLine ("-----------------");
-      
       Console.WriteLine("Would you like to order bread? Type 'y' for yes and 'n' for no");
       userInputB = Console.ReadLine().ToLower();
       if (userInputB == "y")
@@ -35,7 +34,6 @@ namespace PierresBakery
         Console.WriteLine("Order Summary:");
         breadInput.BreadTotal(userQuantityB, breadPrice);
       }
-
       Console.WriteLine("Would you like to order pastry(s)? Type 'y' for yes and 'n' for no");
       userInputP = Console.ReadLine().ToLower();
       if (userInputP == "y")
