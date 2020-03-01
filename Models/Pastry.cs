@@ -8,38 +8,30 @@ namespace PierresBakery.Models
   {
     public int PastryQuantity { get; set; }
     public int PastryPrice { get; set; }
-    public int Total { get; set; }
 
     public Pastry()
     {
       PastryQuantity = 0;
-      PastryPrice = 2;
-      Total = 0;
+      PastryPrice = 0;
     }
 
-    public void DeterminePastryTotal (string userInput)
+    public void PastryTotal(int pastryQuantity, int pastryPrice)
     {
-      if (userInput == "y")
+      if (pastryQuantity == 1)
       {
-        AddPastryQuantity();
-        AddPastryPrice();
+        pastryPrice += 2;
       }
+      else
+      {
+        for(int i = 0; i < pastryQuantity; i++)
+        {
+          if (i % 3 == 0)
+          {
+            pastryPrice += 5;
+          }
+        }
+      }
+      Console.WriteLine(pastryQuantity + " loaf(s) of bread for $" + pastryPrice);
     }
-
-    private void AddPastryQuantity()
-    {
-      PastryQuantity *= 1;
-    }
-
-    private void AddPastryPrice()
-    {
-      PastryPrice *= 1;
-    }
-
-    // public PastryTotal()
-    // {
-
-    // }
-
   }
 }
