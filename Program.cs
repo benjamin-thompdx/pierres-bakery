@@ -26,7 +26,7 @@ namespace PierresBakery
       userInputB = Console.ReadLine().ToLower();
       if (userInputB == "y")
       {
-        Console.WriteLine("Enter the number of loaves of bread you would like to buy:");
+        Console.WriteLine("Enter the number of loaves of bread you would like to order:");
         string breadQuantityTemp = Console.ReadLine();
         int userQuantityB = int.Parse(breadQuantityTemp);
         int breadPrice = 0;
@@ -38,7 +38,7 @@ namespace PierresBakery
       userInputP = Console.ReadLine().ToLower();
       if (userInputP == "y")
       {
-        Console.WriteLine("Enter the number of pastries you would like to buy:");
+        Console.WriteLine("Enter the number of pastries you would like to order:");
         string pastryQuantityTemp = Console.ReadLine();
         int userQuantityP = int.Parse(pastryQuantityTemp);
         int pastryPrice  = 0;

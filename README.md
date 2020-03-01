@@ -15,10 +15,12 @@ A user can create a Pierre's Bakery order for bread and/or pastries and the appl
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|User recieves a welcome message with bread and pastry prices along with the current specials.|NA|"Welcome to Pierre's Bakery! Bakery Menu: Bread $5, Pastry $2 Current Specials: Bread: Buy 2, Get 1 Free Pastry: Buy 3 for $5"|
-|User enters the number of breads they would like to order and presses enter|"bread, 2"|NA|
-|User enters the number of pastries they would like to order and presses enter|"pastry, 3"|NA|
-|The application returns an order summary and total cost for the custom order|NA|Your order includes 3 bread(s) and 3 pastry(s) and your total is: $15|
+|User receives a welcome message with bread and pastry prices along with the current specials.|NA|"Welcome to Pierre's Bakery! Bakery Menu: Bread $5, Pastry $2 Current Specials: Bread: Buy 2, Get 1 Free Pastry: Buy 3 for $5"|
+|User receives the following message "Would you like to order bread? Type 'y' for yes and 'n' for no"|"y"|"Enter the number of loaves of bread you would like to order:"|
+|User enters the number of breads they would like to order and presses enter|"3"|Order Summary: 3 loaf(s) of bread for $10|
+|User receives the following message "Would you like to order pastry(s)? Type 'y' for yes and 'n' for no"|"y"|"Enter the number of pastries you would like to order:"|
+|User enters the number of pastries they would like to order and presses enter|"3"|Order Summary: 3 pastry(s) for $5|
+|User receives a closing message thanking them for visiting|NA|Thank you for visiting - We look forward to doing business with you in the future!|
 
 ## Setup/Installation Requirements
 

@@ -29,7 +29,7 @@ namespace PierresBakery.Models
           }
         }
       }
-      Console.WriteLine(pastryQuantity + " loaf(s) of bread for $" + pastryPrice);
+      Console.WriteLine(pastryQuantity + " pastry(s) for $" + pastryPrice);
     }
   }
 }
